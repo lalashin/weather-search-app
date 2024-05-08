@@ -1,0 +1,26 @@
+.weather-hour {
+  margin-top: 5px;
+}
+.weather-time strong{
+    border-bottom: 1px dotted #d6d3d3;
+}
+.condition-area {
+    height: 30px;
+}
+.weather-disc {
+    display: flex;
+    align-items: center;
+    
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+
+}
+
+.weather-disc img{
+    width:28px ;
+    vertical-align: middle;
+}
+.weather-disc strong{
+    font-size: 17px;
+    margin-inline-end: 7px;
+    margin-block-start: 2px;
+}
