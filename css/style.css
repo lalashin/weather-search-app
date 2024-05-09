@@ -24,3 +24,61 @@
     margin-inline-end: 7px;
     margin-block-start: 2px;
 }
+
+.page{
+    /* text-align: center; */
+    width: 100%;
+    display: none;
+}
+.page.on {
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;   
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {  
+    text-align: center;
+}
+.pagination a{
+    display: inline-block;
+   font-size: 14px;
+   text-decoration: none;
+   padding: 5px 12px;
+   color: #96a0ad;
+   line-height: 1.5;
+}
+.first {
+    margin-right: 10px;
+}
+.last {
+    margin-left: 10px;
+}
+.first:hover, .last:hover, .left:hover, .right:hover {
+    color: #2e9cdf;
+}
+.pagination a:active {
+    cursor: default;
+    color: #fff;
+}
+.modal .num {
+    margin-left: 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+}
+.modal .num:hover {
+    background-color: #2e9cdf;
+    color: #fff;
+}
+.modal .num.active, .modal .num:active {
+    color: #fff;
+    background-color: #2e9cdf;
+    cursor: pointer;
+}
