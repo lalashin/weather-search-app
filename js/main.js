@@ -12,6 +12,26 @@ const groupSize = 5;
 let link = window.location.href;
 //console.log(link)
 
+cityInput.addEventListener("keydown",function(event){
+    if(event.keyCode === 13){
+        //addTask(event);
+        if(cityInput.value !==''){
+            searchResult();
+        }else{
+            alert("도시 이름을 입력하세요!");
+        }
+    
+    }
+});
+
+searchBtn.addEventListener('click', ()=>{
+    if(cityInput.value !==''){
+        searchResult();
+    }else{
+        alert("도시 이름을 입력하세요!");
+    }
+
+});
 
 searchBtn.addEventListener('click',searchResult);
 
