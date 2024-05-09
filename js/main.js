@@ -16,6 +16,7 @@ cityInput.addEventListener("keydown",function(event){
     if(event.keyCode === 13){
         //addTask(event);
         if(cityInput.value !==''){
+            page = 1;
             searchResult();
         }else{
             alert("도시 이름을 입력하세요!");
@@ -26,6 +27,7 @@ cityInput.addEventListener("keydown",function(event){
 
 searchBtn.addEventListener('click', ()=>{
     if(cityInput.value !==''){
+        page = 1;
         searchResult();
     }else{
         alert("도시 이름을 입력하세요!");
@@ -35,8 +37,8 @@ searchBtn.addEventListener('click', ()=>{
 
 searchBtn.addEventListener('click',searchResult);
 
-async function searchResult(page) {
-    console.log(page);
+async function searchResult() {
+   // console.log(page);
     
     let city = cityInput.value.trim();
     console.log(city);
@@ -149,5 +151,5 @@ function displayForecast(data,city) {
   const moveToPage =(pageNum)=>{
     console.log("moveToPage",pageNum);
     page = pageNum;
-    searchResult(page)
+    searchResult()
 }
